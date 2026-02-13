@@ -1,0 +1,14 @@
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\bin\Debug\net10.0\LogicaProgramacao.exe
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\bin\Debug\net10.0\LogicaProgramacao.deps.json
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\bin\Debug\net10.0\LogicaProgramacao.runtimeconfig.json
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\bin\Debug\net10.0\LogicaProgramacao.dll
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\bin\Debug\net10.0\LogicaProgramacao.pdb
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\LogicaProgramacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\LogicaProgramacao.AssemblyInfoInputs.cache
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\LogicaProgramacao.AssemblyInfo.cs
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\LogicaProgramacao.csproj.CoreCompileInputs.cache
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\LogicaProgramacao.dll
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\refint\LogicaProgramacao.dll
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\LogicaProgramacao.pdb
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\LogicaProgramacao.genruntimeconfig.cache
+C:\temp\c_sharp\projetos\LogicaProgramacao\LogicaProgramacao\obj\Debug\net10.0\ref\LogicaProgramacao.dll

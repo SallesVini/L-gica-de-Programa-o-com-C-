@@ -132,6 +132,8 @@ Esses operadores fazem uma operação matemática e já armazenam o resultado na
 
 #### Operadores de Atribuição com Bits
 
+Usados para operações binárias (nível de bits).
+
 - &=  -> AND bit a bit  
 - |=  -> OR bit a bit  
 - ^=  -> XOR bit a bit  
@@ -140,11 +142,14 @@ Esses operadores fazem uma operação matemática e já armazenam o resultado na
 
 #### Operador de Atribuição Condicional
 
-- ??= -> só atribui se a variável estiver nula  
+- ??= -> só atribui se a variável estiver nula
+  Muito usado com tipos que permitem null.
 
 ---
 
 #### Operadores Aritméticos
+
+Os operadores aritméticos são usados para realizar cálculos matemáticos entre valores numéricos.
 
 - +  -> adição  
 - -  -> subtração  
@@ -152,29 +157,36 @@ Esses operadores fazem uma operação matemática e já armazenam o resultado na
 - /  -> divisão  
 - %  -> módulo (resto da divisão)  
 
-Observação: se os dois valores forem inteiros, o resultado será inteiro.
+Observação: se os dois valores forem inteiros, o resultado será inteiro (descarta a parte decimal).
 
 ---
 
 #### Operadores Unários Aritméticos
 
-- ++ -> incremento  
-- -- -> decremento  
-- +  -> mantém positivo  
-- -  -> inverte o sinal  
+- ++ -> incremento. Aumenta 1 unidade no valor da variável.  
+- -- -> decremento. Diminui 1 unidade no valor da variável.
+- +  -> operador unário positivo (mantém o valor positivo).
+- -  -> operador unário negativo (inverte o sinal do valor). 
 
 ---
 
 #### 🧠 Entrada de Dados em C#
 
-Entrada de dados é quando o programa lê dados digitados pelo usuário  
-ou de outra fonte.
+Entrada de dados é quando o programa lê dados digitados pelo usuário ou de outra fonte, de outro arquivo por exemplo.
 
-- Console.ReadLine() -> lê até a quebra de linha e retorna string  
+O comando em C# para você ler os dados digitados pelo usuário é o comando:
+
+- Console.ReadLine() -> Lê da entrada padrão até a quebra de linha e retorna para o programa em forma de string o que foi lido.
 
 ---
 
 #### 🧠 Operadores Comparativos (Relacionais)
+
+Os operadores comparativos são utilizados para comparar valores entre variáveis ou expressões.
+
+O resultado de qualquer comparação é sempre um valor booleano:
+**true (verdadeiro)** quando a condição é atendida, ou
+**false (falso)** quando não é atendida.
 
 - ==  -> igual a  
 - !=  -> diferente de  
@@ -188,6 +200,8 @@ O resultado sempre será `true` ou `false`.
 ---
 
 #### 🧠 Operadores Lógicos
+
+Os operadores lógicos são usados para combinar expressões booleanas ( e sempre vão retornar true ou false).
 
 - &&  -> AND lógico (verdadeiro se ambas forem verdadeiras)  
 - ||  -> OR lógico (verdadeiro se ao menos uma for verdadeira)  
@@ -204,6 +218,9 @@ A condição sempre deve retornar `true` ou `false`.
 
 #### Estrutura Condicional Simples
 
+A estrutura condicional simples é composta apenas por um único if().
+O bloco de código dentro do if() será executado somente se a condição desse if() for verdadeira.
+
 ```csharp
 if (condição) {
     comando 1;
@@ -212,6 +229,10 @@ if (condição) {
 ```
 
 #### Estrutura Condicional Composta
+
+A estrutura condicional composta é formada por uma estrutura if() e uma estrutura else.
+Se a condição nesse caso for verdadeira, então o que será executado será a estrutura if().
+Caso a condição nesse caso seja falsa, então o que será executado será a estrutura else.
 
 ```csharp
 if (condição) {
@@ -223,6 +244,12 @@ else {
 ```
 
 #### Estrutura Condicional Encadeada
+
+A estrutura condicional encadeada é usada quando precisamos testar múltiplas condições diferentes.
+Ela utiliza uma estrutura if(), uma estrutura else if() e uma estrutura else.
+
+O programa avalia as condições de cima para baixo.
+Quando encontra a primeira condição verdadeira, executa a estrutura correspondente e ignora as demais.
 
 ```csharp
 if (condição1) {
@@ -243,7 +270,7 @@ Observações:
 
 - Apenas um bloco será executado.  
 - O bloco `else` é opcional.  
-- A ordem das condições é importante.  
+- A ordem das condições é importante, pois a primeira condição verdadeira encerra a verificação das outras condições.
 
 ---
 
@@ -252,23 +279,32 @@ Observações:
 Funções representam um bloco de código responsável  
 por executar uma tarefa específica.
 
-Elas encapsulam um processamento com significado dentro do sistema.
+Elas servem para encapsular um processamento (uma operação) que possui um significado dentro do sistema.
 
 Exemplo conceitual:
+Uma função como:
+- Math.Sqrt() -> representa o cálculo da raiz quadrada de um número informado (passado) para ela.
 
-- Math.Sqrt() -> calcula a raiz quadrada de um número.
 
 #### Vantagens das Funções
 
-- Modularização  
-- Reaproveitamento  
-- Delegação  
+- Modularização  -> divide o programa em partes menores e organizadas.  
+- Reaproveitamento -> permite reutilizar o mesmo código (a mesma função) várias vezes. 
+- Delegação  Delegação -> permite separar responsabilidades no sistema.
 
-Funções podem receber parâmetros  
-e podem retornar um valor utilizando `return`.
 
-Em programação orientada a objetos,  
-funções declaradas dentro de classes recebem o nome de **métodos**.
+#### Entrada e Saída de Dados em Funções
+
+Funções podem receber dados de entrada,
+chamados de parâmetros (ou argumentos).
+
+Elas podem ou não retornar um valor como saída.
+Quando retornam, utilizam a palavra-chave `return`.
+
+
+#### Funções em Orientação a Objetos
+
+Em programação orientada a objetos, funções declaradas dentro de classes recebem o nome de **métodos**.  
 
 
 #### Funções em C#
@@ -280,6 +316,7 @@ Quando criamos um método, precisamos definir se ele pertence: À classe Ou ao o
 
 Para indicar que um método pertence à classe, utilizamos a palavra-chave static.
 
+
 #### Por que precisamos de static?
 
 A palavra static indica que o método pertence à própria classe,
@@ -287,9 +324,10 @@ e não a um objeto específico criado com new.
 
 Isso significa que:
 
-Métodos static podem ser chamados diretamente pela classe
+Métodos (funções) static podem ser chamados diretamente pela classe
 
 Métodos não static precisam de um objeto instanciado
+
 
 #### Exemplo de método static:
 
@@ -332,6 +370,7 @@ p.Apresentar();
 Aqui foi necessário criar o objeto,
 pois o método depende dos dados da instância.
 
+
 #### 📌 Por que o método Main é static?
 
 O método Main é o ponto de entrada do programa.
@@ -340,6 +379,7 @@ de qualquer objeto.
 
 O sistema precisa chamar esse método diretamente pela classe,
 sem instanciá-la manualmente.
+
 
 #### 📌 Quando usar static?
 
@@ -351,6 +391,7 @@ Representa um comportamento geral
 
 É utilitário (ex: cálculos, validações, conversões)
 
+
 #### 📌 Não use static quando o método:
 
 Precisa acessar dados específicos do objeto
@@ -359,12 +400,16 @@ Depende do estado interno da instância
 
 ---
 
+
 #### 🧠 Estrutura Repetitiva while
 
 A estrutura `while` é usada para repetir um bloco de código  
 enquanto uma condição for verdadeira.
 
-A condição é verificada antes de cada repetição.
+A condição é verificada antes de cada repetição. Se a condição for **true**, o bloco é executado.
+Se for **false**, a repetição é encerrada.
+
+É importante garantir que a condição em algum momento se torne falsa, para evitar um loop infinito.
 
 ```csharp
 while (condição) {
@@ -373,22 +418,22 @@ while (condição) {
 }
 ```
 
-É importante garantir que a condição  
-em algum momento se torne falsa,  
-para evitar loop infinito.
-
 ---
+
 
 #### 🧠 Estrutura Repetitiva for
 
-A estrutura `for` é utilizada quando sabemos  
-quantas vezes o bloco deve ser executado.
+A estrutura `for` é utilizada quando sabemos antecipadamente quantas vezes o bloco de código deve ser executado.
 
-Possui três partes principais:
+Ela é muito usada para percorrer sequências (que já conhecemos) ou repetir alguns comandos, um número definido de vezes. 
 
-- início  
-- condição  
-- incremento  
+O for possui três partes principais:
+
+- início -> onde declaramos e inicializamos a variável de controle.
+- condição -> define até quando a repetição continuará. Até onde vai a variável de controle 
+- incremento -> atualiza a variável de controle a cada repetição.
+
+A repetição acontece enquanto a condição for verdadeira. Quando a condição se torna falsa, o loop é encerrado.
 
 ```csharp
 for (inicio; condição; incremento) {
@@ -396,6 +441,3 @@ for (inicio; condição; incremento) {
     comando 2;
 }
 ```
-
-A repetição acontece enquanto a condição for verdadeira.  
-Quando a condição se torna falsa, o loop é encerrado.

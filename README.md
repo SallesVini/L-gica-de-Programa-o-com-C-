@@ -122,6 +122,8 @@ Ele substitui o valor atual da variável pelo novo valor.
 
 #### Operadores de Atribuição Composta
 
+Esses operadores fazem uma operação matemática e já armazenam o resultado na própria variável.
+
 - +=  -> soma e salva na própria variável  
 - -=  -> subtrai e salva  
 - *=  -> multiplica e salva  
